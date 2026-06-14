@@ -1,0 +1,350 @@
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-800);
+}
+
+.dashboard-header p {
+  color: var(--gray-500);
+  font-size: 1.05rem;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  margin-bottom: 1.5rem;
+}
+
+.candidates-list {
+  flex: 1;
+}
+
+.candidate-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-header {
+  margin-bottom: 1rem;
+}
+
+.candidate-header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--gray-800);
+}
+
+.candidate-id {
+  display: inline-block;
+  background-color: var(--gray-100);
+  color: var(--gray-600);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.marks-section {
+  background-color: var(--gray-50);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.submitted-mark {
+  padding: 0.5rem 0;
+}
+
+.mark-label {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+}
+
+.mark-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.no-mark {
+  padding: 0.5rem 0;
+}
+
+.no-mark p {
+  margin: 0;
+  color: var(--gray-400);
+  font-size: 0.9rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.input-group button {
+  flex-shrink: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats-card h3,
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: var(--gray-800);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.guidelines {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.guidelines li {
+  margin-bottom: 0.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray-500);
+}
+
+/* Super Judge specific styles */
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.marks-table thead {
+  background-color: var(--gray-100);
+}
+
+.marks-table th,
+.marks-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.marks-table th {
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.marks-table tr:hover {
+  background-color: var(--gray-50);
+}
+
+.score-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.score-badge.high {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #047857;
+}
+
+.score-badge.medium {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+}
+
+.score-badge.low {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #991b1b;
+}
+
+.leaderboard {
+  margin-top: 2rem;
+}
+
+.leaderboard-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--gray-800);
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--gray-200);
+}
+
+.leaderboard-item.top-1 {
+  border-left-color: #fbbf24;
+  background-color: rgba(251, 191, 36, 0.05);
+}
+
+.leaderboard-item.top-2 {
+  border-left-color: #d1d5db;
+  background-color: rgba(209, 213, 219, 0.05);
+}
+
+.leaderboard-item.top-3 {
+  border-left-color: #f97316;
+  background-color: rgba(249, 115, 22, 0.05);
+}
+
+.leaderboard-rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.leaderboard-item.top-1 .leaderboard-rank {
+  background-color: #fbbf24;
+  color: #78350f;
+}
+
+.leaderboard-item.top-2 .leaderboard-rank {
+  background-color: #d1d5db;
+  color: #1f2937;
+}
+
+.leaderboard-item.top-3 .leaderboard-rank {
+  background-color: #f97316;
+  color: white;
+}
+
+.leaderboard-item.other .leaderboard-rank {
+  background-color: var(--gray-300);
+  color: var(--gray-700);
+}
+
+.leaderboard-details {
+  flex: 1;
+}
+
+.leaderboard-name {
+  font-weight: 600;
+  color: var(--gray-800);
+  margin-bottom: 0.25rem;
+}
+
+.leaderboard-meta {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.leaderboard-score {
+  text-align: right;
+}
+
+.leaderboard-avg {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.leaderboard-judges {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+  }
+
+  .stats-card,
+  .info-card {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .marks-table {
+    font-size: 0.85rem;
+  }
+
+  .marks-table th,
+  .marks-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+}
