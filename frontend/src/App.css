@@ -1,0 +1,46 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.backend-status {
+  font-size: 0.9rem;
+}
+
+.backend-status span {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.backend-status .success {
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #4caf50;
+}
+
+.backend-status .error {
+  background-color: rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+.App-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}

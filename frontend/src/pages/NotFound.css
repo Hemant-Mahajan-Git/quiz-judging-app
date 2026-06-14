@@ -1,0 +1,32 @@
+.NotFound {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.NotFound h2 {
+  color: #f44336;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.NotFound p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #764ba2;
+}
